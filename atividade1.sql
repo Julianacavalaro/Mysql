@@ -10,7 +10,7 @@
 
 drop table funcionarios;
 CREATE DATABASE rh;
-drop table funcionarios;
+
 USE rh;
 
 CREATE TABLE funcionarios(
@@ -37,5 +37,8 @@ select * from funcionarios;
 
 select * from funcionarios where salario> 2000;
 select *from funcionarios where salario< 2000;
+
+update funcionarios set nome = 'Marco' where ID_funcionarios='3';
+update funcionarios set nome = 'Juliana' where ID_funcionarios='4';
 
 alter table funcionarios modify column nome varchar(20);
