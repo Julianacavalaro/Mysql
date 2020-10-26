@@ -2,12 +2,12 @@
 #Crie uma tabela de funcionários e utilizando a habilidade de abstração e determine 5 atributos relevantes dos funcionários para se trabalhar com o serviço deste RH.
 
 #Popule esta tabela com até 5 dados;
-
 #Faça um select que retorne os funcionários com o salário maior do que 2000.
-
 #Faça um select que retorne os funcionários com o salário menor do que 2000.
-
 #Ao término atualize um dado desta tabela através de uma query de atualização.
+
+#salve as querys para cada uma dos requisitos o exercício em um arquivo .SQL ou texto e coloque no seu GitHuB pessoal e compartilhe esta atividade.
+
 drop table funcionarios;
 CREATE DATABASE rh;
 drop table funcionarios;
