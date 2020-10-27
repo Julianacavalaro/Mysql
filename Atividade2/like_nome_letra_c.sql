@@ -1,0 +1,1 @@
+select * from tb_funcionario where nome like "%C%";
