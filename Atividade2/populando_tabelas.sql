@@ -33,5 +33,7 @@ update tb_funcionario set nome = 'Carlos' where idtb_funcionario='5';
 update tb_funcionario set nome = 'Cauê' where idtb_funcionario='6';
 update tb_funcionario set sexo = 'M' where idtb_funcionario='5';
 
+  select *from tb_funcionario inner join tb_cargo where tb_cargo.id_cargo = tb_funcionario.tb_cargo_id_cargo;
+  
 #funcionários que são full stack
 select * from tb_funcionario where tb_cargo_id_cargo= '5';
