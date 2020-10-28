@@ -32,8 +32,17 @@ insert into tb_funcionario values
 update tb_funcionario set nome = 'Carlos' where idtb_funcionario='5';
 update tb_funcionario set nome = 'Cauê' where idtb_funcionario='6';
 update tb_funcionario set sexo = 'M' where idtb_funcionario='5';
-
-  select *from tb_funcionario inner join tb_cargo where tb_cargo.id_cargo = tb_funcionario.tb_cargo_id_cargo;
+	
+#inner join
+  select *from tb_funcionario inner join tb_cargo on tb_cargo.id_cargo = tb_funcionario.tb_cargo_id_cargo;
   
+  #left join
+  select *from tb_funcionario left join tb_cargo on tb_cargo.id_cargo = tb_funcionario.tb_cargo_id_cargo;
+  
+   #right join
+  select *from tb_funcionario right join tb_cargo on tb_cargo.id_cargo = tb_funcionario.tb_cargo_id_cargo;
+
 #funcionários que são full stack
 select * from tb_funcionario where tb_cargo_id_cargo= '5';
+
+select  tb_funcionario.idtb_funcionario, tb_funcionario.sexo, tb_funcionario.salario from tb_funcionario;
