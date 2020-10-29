@@ -5,6 +5,7 @@ CREATE TABLE `Postagens` (
 	`tipo_arquivo` blob(255) NOT NULL,
 	`id_tema` INT(255) NOT NULL,
 	`id_usuario` INT(255) NOT NULL,
+	`data_hora` DATETIME NOT NULL DEFAULT 'now',
 	PRIMARY KEY (`id_postagem`)
 );
 
@@ -21,7 +22,7 @@ CREATE TABLE `Usuário` (
 	`nome_completo` varchar(255) NOT NULL,
 	`email_usuario` varchar(255) NOT NULL,
 	`senha_usuario` varchar(255) NOT NULL,
-	`tipo_usuario` enum ('Aluno', 'Tutor', 'Escola') NOT NULL,
+    `tipo_usuario` enum ('Aluno', 'Tutor', 'Escola') NOT NULL,
 	PRIMARY KEY (`id_usuario`)
 );
 
