@@ -25,9 +25,7 @@ CREATE TABLE `Usuário` (
 	PRIMARY KEY (`id_usuario`)
 );
 
-ALTER TABLE `Postagens` ADD 
-CONSTRAINT `Postagens_fk0` FOREIGN KEY (`id_tema`) REFERENCES `Tema`(`id_tema`);
+ALTER TABLE `Postagens` ADD CONSTRAINT `Postagens_fk0` FOREIGN KEY (`id_tema`) REFERENCES `Tema`(`id_tema`);
 
-ALTER TABLE `Postagens` ADD 
-CONSTRAINT `Postagens_fk1` FOREIGN KEY (`id_usuario`) REFERENCES `Usuário`(`id_usuario`);
+ALTER TABLE `Postagens` ADD CONSTRAINT `Postagens_fk1` FOREIGN KEY (`id_usuario`) REFERENCES `Usuário`(`id_usuario`);
 
